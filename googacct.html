@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Verify Google Account</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpIqN6SUa9OUTj7ZvdXPM_KjVYV1qvfuQ&libraries=places"></script>
+</head>
+
+<body>
+    <div class="main-review-content-container">
+      <img src="Icons/google_g_logo.png">
+    <h3>Do you have a Google Account?</h3>
+  <div class="action-box">
+    <button type="button" class="btn btn-warning" id="googleYes">Yes</button>
+    <button type="button" class="btn btn-warning" id="googleNo">No</button>
+  </div>
+    </div>
+<script>
+$(document).on('click', '#googleYes', function()
+{
+    window.location="https://search.google.com/local/reviews?placeid=ChIJZ1cq7NIr2YcRqDJl28rbRfI&hl=en&gl=US";
+})
+$(document).on('click', '#googleNo', function()
+{
+    window.location="http://45.55.77.243/bizreview/fbverify.html"
+});
+</script>
+</body>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Verify Facebook Account</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body>
+    <div class="main-review-content-container">
+      <img src="Icons/FB-fLogo-Blue-broadcast-2.png">
+    <h3>Do you have a Facebook Account?</h3>
+  <div class="action-box">
+    <button type="button" class="btn btn-warning btn-lg" id="fbYes">Yes</button>
+    <button type="button" class="btn btn-warning btn-lg" id="fbNo">No</button>
+  </div>
+    </div>
+    <script>
+    $(document).on('click', '#fbYes', function()
+    {
+        window.location="https://www.facebook.com/cherryhillsfamilyeyecare/reviews"
+    })
+    $(document).on('click', '#fbNo', function()
+    {
+        window.location="http://45.55.77.243/bizreview/feedback.html"
+    });
+    </script>
+</body>
